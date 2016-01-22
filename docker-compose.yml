@@ -1,0 +1,14 @@
+nginx:
+  build: nginx/
+  volumes:
+    - ./app:/www/app
+  ports:
+    - "80:80"
+  links:
+    - api
+
+api:
+  build: ./api
+  hostname: localhost
+  ports:
+    - "3000:3000"
