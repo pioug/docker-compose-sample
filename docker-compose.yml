@@ -1,9 +1,11 @@
 nginx:
   build: nginx/
   volumes:
+    - /etc/letsencrypt/:/etc/letsencrypt
     - ./app:/www/app
   ports:
     - "80:80"
+    - "443:443"
   links:
     - api
 
