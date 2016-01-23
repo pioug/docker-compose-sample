@@ -7,7 +7,14 @@ nginx:
     - "80:80"
     - "443:443"
   links:
+    - freegeoip
     - api
+
+freegeoip:
+  build: ../freegeoip
+  hostname: localhost
+  ports:
+    - "8080:8080"
 
 api:
   build: ./api
