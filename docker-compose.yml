@@ -1,5 +1,5 @@
 nginx:
-  build: nginx/
+  build: ../nginx
   volumes:
     - /etc/letsencrypt/:/etc/letsencrypt
     - /root/dev/can-i-uber/build:/www/can-i-uber
