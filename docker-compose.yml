@@ -22,3 +22,8 @@ api:
   hostname: localhost
   ports:
     - "3000:3000"
+
+# docker-compose build nginx
+# docker-compose up -d nginx
+# docker-compose stop nginx
+# ./letsencrypt-auto renew
