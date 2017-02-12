@@ -4,6 +4,7 @@ nginx:
     - /etc/letsencrypt/:/etc/letsencrypt
     - /root/dev/can-i-uber/build:/www/can-i-uber
     - ./app:/www/app
+    - /root/dev/heartbeat-site/:/www/heartbeat/
   ports:
     - "80:80"
     - "443:443"
